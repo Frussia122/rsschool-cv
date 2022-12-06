@@ -41,7 +41,6 @@ I had some expirience working on freelance. Worked with a lot of technologies: l
     
 }
 ```
-
 # Work experience:
 * Freelance 1 year. 
 
