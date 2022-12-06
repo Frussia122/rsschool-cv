@@ -2,7 +2,7 @@
 # Alexey Sidorkin
 # My Contact Info:
 *  Phone: +375 29 157 25 28
-*  E-mail: [email](amidgard@list.ru)
+*  E-mail: amidgard@list.ru
 *  GitHub: [Frussia122](https://github.com/Frussia122)
 *  VK: [byebyekitty1](https://vk.com/byebyekitty1)
 # Summary
@@ -15,17 +15,29 @@ I had some expirience working on freelance. Worked with a lot of technologies: l
 * Figma
 # Code Example
 ```
-function getCount(str) {
-let vowels = ["a", "e", "i", "o", "u"];
-let count = 0;
-for (i = 0; i < str.length; i++){
-for (j = 0; j < vowels.length; j++){
-if(str[i] === vowels[j]) {
-count += 1;
+async function submit() {
+let response = await fetch(`https://www.nbrb.by/api/exrates/rates?ondate=${ondate}&periodicity=0`);
+if (response.ok) {
+let json = await response.json();
+let USD = 'USD';
+let EUR = 'EUR';
+let RUB = 'RUB';
+for(var i = 0; i < json.length; i++) { 
+if(json[i].Cur_Abbreviation == USD) {
+curRateUSD = json[i].Cur_OfficialRate;
+}
+if(json[i].Cur_Abbreviation == EUR) {
+curRateEUR = json[i].Cur_OfficialRate;
+}
+if(json[i].Cur_Abbreviation == RUB) {
+curRateRUB = json[i].Cur_OfficialRate;
 }
 }
+return;
 }
-return count;
+else {
+console.log('Error');
+}
 }
 ```
 # Work experience:
