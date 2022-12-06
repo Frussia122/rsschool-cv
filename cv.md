@@ -15,30 +15,17 @@ I had some expirience working on freelance. Worked with a lot of technologies: l
 * Figma
 # Code Example
 ```
-    async function submit() {
-    let response = await fetch(`https://www.nbrb.by/api/exrates/rates?ondate={ondate}&periodicity=0`);
-    if (response.ok) {
-    let json = await response.json();
-    let USD = 'USD';
-    let EUR = 'EUR';
-    let RUB = 'RUB';
-    for(var i = 0; i < json.length; i++) { /* Looking for exact rates from array of 27 currencies */
-    if(json[i].Cur_Abbreviation == USD) {
-    curRateUSD = json[i].Cur_OfficialRate;
-    }
-    if(json[i].Cur_Abbreviation == EUR) {
-    curRateEUR = json[i].Cur_OfficialRate;
-    }
-    if(json[i].Cur_Abbreviation == RUB) {
-    curRateRUB = json[i].Cur_OfficialRate;
-    }
-    }
-    return;
-    }
-    else {
-    console.log('Error');
-    }
-    
+function getCount(str) {
+let vowels = ["a", "e", "i", "o", "u"];
+let count = 0;
+for (i = 0; i < str.length; i++){
+for (j = 0; j < vowels.length; j++){
+if(str[i] === vowels[j]) {
+count += 1;
+}
+}
+}
+return count;
 }
 ```
 # Work experience:
