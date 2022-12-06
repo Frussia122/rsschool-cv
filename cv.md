@@ -8,3 +8,8 @@
 # Summary
 I had some expirience working on freelance. Worked with a lot of technologies: less/sass, gulp, react, redux and etc. I Had about 7 - 10 works in portfolio. Now im a student of the Gomel state University of Francisk Skorina.
 # Skills
+* HTML, CSS, JavaScript
+* React JS, Redux
+* GIT
+* Module Bundlers: Gulp, Webpack.
+* Figma
