@@ -13,3 +13,44 @@ I had some expirience working on freelance. Worked with a lot of technologies: l
 * GIT
 * Module Bundlers: Gulp, Webpack.
 * Figma
+# Code Example
+```
+    async function submit() {
+    let response = await fetch(`https://www.nbrb.by/api/exrates/rates?ondate={ondate}&periodicity=0`);
+    if (response.ok) {
+    let json = await response.json();
+    let USD = 'USD';
+    let EUR = 'EUR';
+    let RUB = 'RUB';
+    for(var i = 0; i < json.length; i++) { /* Looking for exact rates from array of 27 currencies */
+    if(json[i].Cur_Abbreviation == USD) {
+    curRateUSD = json[i].Cur_OfficialRate;
+    }
+    if(json[i].Cur_Abbreviation == EUR) {
+    curRateEUR = json[i].Cur_OfficialRate;
+    }
+    if(json[i].Cur_Abbreviation == RUB) {
+    curRateRUB = json[i].Cur_OfficialRate;
+    }
+    }
+    return;
+    }
+    else {
+    console.log('Error');
+    }
+    
+}
+```
+
+# Work experience:
+* Freelance 1 year. 
+
+# Education
+* Gomel State University of Francisk Skorina
+    + Faculty of Fisics And IT
+* Epam Course of Frondent Development
+* Udemy courses. 
+# Languages
+* Russian
+* English
+* Belarussian
