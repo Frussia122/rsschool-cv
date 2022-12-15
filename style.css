@@ -68,7 +68,7 @@ table {
 
 .header{
     height: 400px;
-    background-image: url(img/header__back.jpg);
+    background-image: url("assets/img/header__back.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -87,7 +87,7 @@ table {
 .header::before{
     z-index: 1;
     content: '';
-    background: url(img/pattern.png);
+    background: url("assets/img/pattern.png");
     height: 100%;
     width: 100%;
     position: absolute;
@@ -112,7 +112,7 @@ table {
     border:1px solid white;
     padding: 25px 20px;
 }
-.header__title{
+.header__title h1{
     font-size: 76px;
     font-weight: 300;
     margin:40px 0;
@@ -147,7 +147,6 @@ section{
 
 .section__header-title{
     margin: 26px 0;
-    
     color: #101010;
     position: relative;
 }
@@ -215,7 +214,7 @@ section{
     height: 299px;
     width: 299px;
     border-radius: 50%;
-    background-image: url(img/avatar.PNG);
+    background-image: url("assets/img/avatar.PNG");
     background-size: cover;
 }
 .about-me__profile{
@@ -231,7 +230,7 @@ section{
   height: 100%;
   top:0;
   left: 0;
-  background-image: url(img/aboutMePattern.png);
+  background-image: url("assets/img/aboutMePattern.png");
   z-index: -1;
 }
 .about-me__links-list{
@@ -372,7 +371,7 @@ section{
     align-items: center;
     height: 356px;
     position: relative;
-    background-image: url(img/aboutMePattern.png);
+    background-image: url("assets/img/aboutMePattern.png");
     border: 1px solid black;
     margin-right: 20px;
     margin-bottom: 40px;
@@ -409,6 +408,8 @@ section{
     display: none;
     position: absolute;
     width: 100%;
+    left: 0;
+    top: 0;
     height: 100%;
 }
 code{
@@ -501,4 +502,5 @@ pre{
 }
 .nav__item:hover::after{
     width: 100%;
+    
 }
