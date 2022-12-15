@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Lato:wght@300;400;700;900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>ALEX SIDORKIN CV</title>
 </head>
 <body>
+    <div class="page-menu">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about-me">About</a></li>
+                <li class="nav__item"><a href="#experience">Experience</a></li>
+                <li class="nav__item"><a href="#education">Education</a></li>
+                <li class="nav__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav__item"><a href="#contacts">Contacts</a></li>
+            </ul>
+
+        </nav>
+        <div class="page__humburger">
+            <div class="humburger__line"></div>
+            <div class="humburger__line"></div>
+            <div class="humburger__line"></div>
+        </div>
+        
+    </div>
     <header class="header">
         <div class="header__container">
             <div class="header__logo"><h1>A</h1></div>
@@ -19,7 +37,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="section__background">about</div>
             <div class="container container--main-sec">
                 <div class="about-me__description">
@@ -120,7 +138,52 @@
             </div>
         </section>
 
-        <section class="education">
+        <section class="experience" id="experience">
+            <div class="section__background">experience</div>
+            <div class="container">
+                <div class="section__big section__big--experience" >
+                    <div class="section__header">
+                        <div class="sreggin">
+                            <img class="" src="img/about-me.svg" alt="">
+                        </div>
+                        <h1 class="section__header-title"> Experience</h1>
+                    </div>
+                   
+                    <ul class="section__education-list">
+                       <li class="section__item">
+                        <div class="section__data section__data--experience">2019 - 2020</div>
+                        <h5 class="section__header-title">Freelance
+                        </h5>
+                        <div class="section__desctiption">
+                            <p>Html/css developer</p>
+                        </div>
+                       </li>
+
+                       <li class="section__item">
+                        <div class="section__data section__data--experience">2020 - 2021</div>
+                        <h5 class="section__header-title">web studio
+                        </h5>
+                        <div class="section__desctiption">
+                            <p>Html/css developer</p>
+                        </div>
+                       </li>
+                       <li class="section__item">
+                        <div class="section__data section__data--experience">2021-present</div>
+                        <h5 class="section__header-title">Freelance
+                        </h5>
+                        <div class="section__desctiption">
+                            <p>Front-end developer</p>
+
+                        </div>
+                       </li>
+
+                       
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
             <div class="section__background">education</div>
             <div class="container container--main-sec">
               
@@ -236,8 +299,7 @@
                             <h5 class="section__header-title">Epam Course of Frondent Development
                             </h5>
                             <div class="section__desctiption">
-                                <p>JavaScript Developer</p>
-                                
+                                <p>JavaScript development</p>
                             </div>
                            </li>
 
@@ -246,11 +308,18 @@
                             <h5 class="section__header-title">Udemy courses
                             </h5>
                             <div class="section__desctiption">
-                                <p>Front-end developer</p>
+                                <p>Front-end development</p>
 
                             </div>
                            </li>
-
+                           <li class="section__item">
+                            <div class="section__data">2021 - present</div>
+                            <h5 class="section__header-title">Gomel State University of Francisk Skorina
+                            </h5>
+                            <div class="section__desctiption">
+                                <p>English courses(B1-B2)</p>
+                            </div>
+                           </li>
                            
                         </ul>
                     </div>
@@ -260,53 +329,201 @@
             </div>  
         </section>
 
-        <section class="experience">
-            <div class="section__background">experience</div>
-            <div class="container">
-                <div class="section__big section__big--experience" >
-                    <div class="section__header">
-                        <div class="sreggin">
-                            <img class="" src="img/about-me.svg" alt="">
+        <section class="portfolio" id="portfolio">
+            <div class="section__background">Portfolio</div>
+            <div class="container container--main-sec">
+                    <div class="section__big" >
+                        <div class="section__header">
+                            <div class="sreggin">
+                                <img class="" src="img/about-me.svg" alt="">
+                            </div>
+                            <h1 class="section__header-title"> portfolio</h1>
                         </div>
-                        <h1 class="section__header-title"> Experience</h1>
-                    </div>
-                   
-                    <ul class="section__education-list">
-                       <li class="section__item">
-                        <div class="section__data section__data--experience">2020 - present</div>
-                        <h5 class="section__header-title">Gomel State University of Francisk Skorina
-                        </h5>
-                        <div class="section__desctiption">
-                            <p>Faculty of Fisics And IT</p>
-                            
-                        </div>
-                       </li>
-                       <li class="section__item">
-                        <div class="section__data section__data--experience">2021-2022</div>
-                        <h5 class="section__header-title">Epam Course of Frondent Development
-                        </h5>
-                        <div class="section__desctiption">
-                            <p>JavaScript Developer</p>
-                            
-                        </div>
-                       </li>
-
-                       <li class="section__item">
-                        <div class="section__data section__data--experience">2019-2020</div>
-                        <h5 class="section__header-title">Udemy courses
-                        </h5>
-                        <div class="section__desctiption">
-                            <p>Front-end developer</p>
-
-                        </div>
-                       </li>
-
                        
-                    </ul>
-                </div>
-            </div>
+                        <ul class="portfolio__list">
+                            <a href="https://amidgard0.github.io/ocwlast/">
+                                <li class="portfolio__item">
+                                       <img src="img/portfolio/OCW.PNG" class="portfolio__item-img" alt="">
+                                       <div class="porfolio__item-text">
+                                        <div class="portfolio__item-icon">
+                                            <img src="img/hobbies.svg" alt="">
+                                        </div>
+                                        <div class="porftolio__item-title">OCW</div>
+                                        <div class="portfolio__item-description">A brand new community</div>
+                                       </div>
+                                    </li>
+                            </a>
+                           <a href="https://amidgard0.github.io/InvestInTyomen/grows-point.html">
+                            <li class="portfolio__item">
+                                <img src="img/portfolio/TOYMEN.PNG" class="portfolio__item-img" alt="">
+                                <div class="porfolio__item-text">
+                                 <div class="portfolio__item-icon">
+                                     <img src="img/hobbies.svg" alt="">
+                                 </div>
+                                 <div class="porftolio__item-title">InvestInTyomen</div>
+                                 <div class="portfolio__item-description">Program of Investition in Tyomen</div>
+                                </div>
+                             </li>
+                           </a>
+                             <a href="https://amidgard0.github.io/CardMills/">
+                                <li class="portfolio__item">
+                                    <img src="img/portfolio/CARDMILS.PNG" class="portfolio__item-img" alt="">
+                                    <div class="porfolio__item-text">
+                                     <div class="portfolio__item-icon">
+                                         <img src="img/hobbies.svg" alt="">
+                                     </div>
+                                     <div class="porftolio__item-title">Card Mills</div>
+                                     <div class="portfolio__item-description">A new fuel card</div>
+                                    </div>
+                                 </li>
+                             </a>
+                             <a href="https://amidgard0.github.io/magnaInvest/cabinet.html">
+                                <li class="portfolio__item">
+                                    <img src="img/portfolio/MAGNA.PNG" class="portfolio__item-img" alt="">
+                                     <div class="porfolio__item-text">
+                                      <div class="portfolio__item-icon">
+                                          <img src="img/hobbies.svg" alt="">
+                                      </div>
+                                      <div class="porftolio__item-title">Magna</div>
+                                      <div class="portfolio__item-description">Investition site</div>
+                                     </div>
+                                  </li>
+                             </a>
+                        </ul>
+                    </div>
+                    
+               
+
+            </div>  
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="section__background">Contacts</div>
+            <div class="container container--main-contacts">
+              
+                    <div class="section__small section__small--contacts">
+                        <div class="markers markers--left">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="markers markers--right">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="markers markers--top">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="markers markers--bottom">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="section__header">
+                            <div class="sreggin">
+                                <img class="" src="img/about-me.svg" alt="">
+                            </div>
+                            <h1 class="section__header-title"> Lets Talk</h1>
+                        </div>
+                        
+                        <div class="about-me__profile-description">
+                            <ul class="about-me__profile-list">
+                                <li class="about-me__profile-item">Phone: +375 29-157-25-28</li>
+                                <li class="about-me__profile-item">E-mail: amidgard@list.ru</li>
+                                <li class="about-me__profile-item">GitHub: Frussia122</li>
+                                <li class="about-me__profile-item">Discord: amidgard#2827</li>
+                            </ul>
+                        </div>
+                        <div class="about-me__links">
+                            <ul class="about-me__links-list">
+                                <li class="about-me__links-item">
+                                    <img src="img/hobbies.svg" alt="" style="width: 30px;">
+                                </li>
+                                <li class="about-me__links-item">
+                                    <img src="img/hobbies.svg" alt="" style="width: 30px;">
+                                </li>
+                                <li class="about-me__links-item">
+                                    <img src="img/hobbies.svg" alt="" style="width: 30px;">
+                                </li>
+                                <li class="about-me__links-item">
+                                    <img src="img/hobbies.svg" alt="" style="width: 30px;">
+                                </li>
+                            </ul>
+                        </div>
+                     
+                    </div>
+                    <div class="section__big section__big--education" >
+                        <div class="section__header">
+                            <div class="sreggin">
+                                <img class="" src="img/about-me.svg" alt="">
+                            </div>
+                            <h1 class="section__header-title"> Code Example</h1>
+                        </div>
+                        <div class="code-example">
+                            <code>
+                                <pre>
+async function submit() {
+ let response = await fetch(url);
+                        
+ if (response.ok) {
+ let json = await response.json();
+ let EUR = 'EUR';
+ let RUB = 'RUB';
+ let USD = 'USD';
+ for(var i = 0; i < json.length; i++) { 
+     if(json[i].Cur_Abbreviation == USD) {
+         curRateUSD = json[i].Cur_OfficialRate;
+        }
+        if(json[i].Cur_Abbreviation == EUR) {
+            curRateEUR = json[i].Cur_OfficialRate;
+        }
+        if(json[i].Cur_Abbreviation == RUB) {
+            curRateRUB = json[i].Cur_OfficialRate;
+        }
+    }
+    return;
+}
+else {
+    throw.error('Error');
+}
+}
+</pre>
+                            </code>
+                        </div>
+                       
+                          
+                    </div>
+                    
+               
+
+            </div>  
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://github.com/Frussia122"><img src="img/GitHub_Logo.png" alt=""></a>
+                </li>
+                <li class="footer__item">
+                    2022
+                </li>
+                <li class="footer__item">
+                  <a href="https://rs.school/js/"> <img src="img/rs_school_js.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
 

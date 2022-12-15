@@ -1,3 +1,7 @@
+*, html {
+
+    scroll-behavior: smooth !important;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,12 +22,19 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 h1{
     font-size: 1.5rem;
 }
 .container{
     max-width: 1200px;
     margin:0 auto;
+}
+section{
+    margin-top: 65px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,6 +58,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+*{
+    scroll-behavior: smooth;
 }
 
 
@@ -109,7 +123,6 @@ section{
 }
 /* About me */
 .about-me, .experience{
-    margin: 70px 0;
     position: relative;
 }
 .section__background{
@@ -343,4 +356,149 @@ section{
 /* experience */
 .section__data--experience{
     right: 0;
+}
+/* portfolio */
+
+.portfolio__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio__item{
+    width: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 356px;
+    position: relative;
+    background-image: url(img/aboutMePattern.png);
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.portfolio__link{
+    display: none;
+}
+.porftolio__item-title{
+    margin: 10px 0;
+}
+.portfolio__item-icon img{
+    width: 35px;
+}
+.porfolio__item-text{
+    
+    text-align: center;
+}
+.section__big--portfolio{
+    margin-left: 60px;
+}
+.portfolio__item:hover{
+    cursor: pointer;
+}
+.portfolio__item:hover .porfolio__item-text{
+    display: none;
+}
+.portfolio__item:hover .portfolio__item-img{
+    display: block;
+}
+.portfolio__link a{
+    font-size: 24px;
+}
+.portfolio__item-img{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+code{
+    width: 100%;
+}
+pre{
+   
+    max-width: 150px;
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+/* Code example */
+.code-example{
+    width: 100%;
+}
+
+/* contacts */
+.container--main-contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.section__small--contacts{
+    padding-right: 120px;
+}
+.footer{
+    border: 1px solid #aaa;
+    margin-top: 70px;
+   
+}
+/* footer */
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.footer__item img{
+   width: 80px;
+}
+.footer__item{
+    font-weight: bold;
+    font-family: "IBM Plex Mono";
+    font-size: 22px;
+    
+}
+
+/* Nav */
+.page-menu{
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    left: 50px;
+    z-index: 1000;
+}
+.page__humburger{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    flex-direction: column;
+}
+.humburger__line{
+    width: 40px;
+    height: 4px;
+    background: #101010;
+}
+.nav__item{
+    font-family: "IBM Plex Mono";
+    margin-bottom: 10px;
+    position: relative;
+   
+}
+.nav__list{
+    transition: all .2s linear;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+.active{
+    opacity: 1;
+}
+.nav__item::after{
+    transition: all .2s linear;
+    width: 0;
+    height: 4px;
+    background: #101010;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+.nav__item:hover::after{
+    width: 100%;
 }
